@@ -1,0 +1,13 @@
+<div class="container">
+    <ng-container *ngFor="let task of tasks">
+        <div class="task" *ngIf="task.archived!=false"  [ngClass]="{'important': task.important}">
+            <p  class="name">{{task.name}}</p>
+            <p  class="description">{{task.description}}</p>
+            <div class="options">
+                <button class="delete" (click)="deleteTask(task.id)">Eliminar</button>
+                <img (click)="archiveTask(task.id)" src="../../assets/icons/archive.png" alt="archive-icon" class="icon-archive"> 
+            </div>
+        </div>
+    </ng-container>
+
+</div>

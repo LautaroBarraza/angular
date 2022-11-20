@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Crea tu tarea</h2>
+
+    <form action="">
+        <div>
+            <h3>destacada</h3>
+            <input type="checkbox" name="destacada" id="checked">
+        </div>
+        <div>
+            <div>
+                <h3>titulo</h3>
+                <app-input-text [(string)]="task.name"></app-input-text>
+            </div>
+            <div>
+                <h3>descripcion</h3>
+                <app-input-text [(string)]="task.description" ></app-input-text>
+            </div>
+        </div>
+    </form>
+
+    <button (click)="addTask()">Agregar</button>
+</div>

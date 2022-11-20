@@ -1,0 +1,96 @@
+div.container{
+    background: #ECECEC;
+    width: 90%;
+    height: 700px;
+    margin: 20px 0;
+    box-shadow: 5px 9px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 20px;
+    overflow-y: scroll;
+
+}
+
+div.important{
+    border: 2px solid #1F71B5;
+}
+
+div.container div.task{
+    height: 300px;
+    width: 100%;
+    background: #D9D9D9;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+}
+
+div.container div.task div.options{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    align-items: center;
+}
+
+
+
+p{
+    width: 125px;
+    overflow: hidden;
+    white-space: normal; 
+    background: #ECECEC;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+p.name{
+    font-weight: bold;
+    text-transform: capitalize;
+    max-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-overflow: ellipsis;
+}
+
+p.description{
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+p.description::first-letter{
+    text-transform: uppercase;
+}
+
+button.delete{
+    background: #FF781C;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    transition: all 0.7s;
+
+}
+
+button.delete:hover{
+    transform: scale(1.1);
+    background: #f06c13;
+    transition: all 0.7s;
+}
+
+img.icon-archive{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+img.icon-archive:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}

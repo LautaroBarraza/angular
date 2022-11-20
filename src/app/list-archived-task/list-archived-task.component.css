@@ -1,0 +1,95 @@
+div.container{
+    background: #ECECEC;
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 20px;
+}
+
+div.important{
+    border: 2px solid #1F71B5;
+}
+
+div.container div.task{
+    height: 300px;
+    width: 100%;
+    background: #D9D9D9;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+}
+
+div.container div.task div.options{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+}
+
+
+
+p{
+    width: 280px;
+
+    overflow: hidden;
+    white-space: normal; 
+    background: #ECECEC;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+
+p.name{
+    font-weight: bold;
+    text-transform: capitalize;
+    max-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-overflow: ellipsis;
+}
+
+p.description{
+    word-wrap: break-word;
+}
+
+p.description::first-letter{
+    text-transform: uppercase;
+}
+button.delete{
+    background: #FF781C;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+    transition: all 0.7s;
+    font-size: larger;
+
+}
+
+button.delete:hover{
+    transform: scale(1.1);
+    background: #f06c13;
+    transition: all 0.7s;
+}
+
+img.icon-archive{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+img.icon-archive:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}

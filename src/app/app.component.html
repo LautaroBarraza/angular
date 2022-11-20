@@ -1,0 +1,16 @@
+<app-app-header></app-app-header>
+
+
+<main>
+    <aside>
+        <ul>
+            <li><a [routerLink]="['/createTask']">Crear Tarea</a> </li>
+            <li><a [routerLink]="['/archivedTask']">Archivadas</a></li>
+        </ul>
+    </aside>
+    <section> 
+        <router-outlet></router-outlet>
+    </section>
+</main>
+
+<app-footer></app-footer>

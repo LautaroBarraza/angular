@@ -1,0 +1,42 @@
+main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+aside{
+    background: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+aside ul{
+    width: 100%;
+    padding-top: 20px;
+    background: #ECECEC;
+}
+
+aside ul li{
+    width: 100%;
+    height: 50px;
+    background: #ECECEC;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside ul li:hover{
+    background: #DBDBDB;
+    transition: all 0.7s ease;
+}
+
+aside ul li a{
+    color: black;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
